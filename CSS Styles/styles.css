@@ -1,0 +1,257 @@
+@font-face {
+    font-family: 'archiathin';
+    src: url('Fonts/archia-thin-webfont.eot');
+    src: url('Fonts/archia-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/archia-thin-webfont.woff2') format('woff2'),
+         url('Fonts/archia-thin-webfont.woff') format('woff'),
+         url('Fonts/archia-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* HTML Section Styles */
+body{
+  text-align: center;
+    font-family: 'archiathin';
+}
+script {
+  display: none;
+}
+
+/* Class Styles */
+
+.navbar-light{
+  color: black;
+}
+.navbar-toggler {
+  color: black;
+  border: none;
+}
+.top-container {
+  background-color: #b8b3da;
+}
+.navbar{
+  padding: 0 0 4rem;
+  color: black;
+}
+.navbar-brand{
+  font-family: 'archiathin';
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+.nav-item{
+  padding: 0 18px;
+}
+.nav-link{
+  font-size: 1.2rem;
+  font-family: 'archiathin';
+  font-weight: lighter;
+}
+.grid {
+     position: relative;
+     display: block;
+     margin: auto;
+     padding: 2rem 4rem;
+     max-width: 1200px;
+     list-style: none;
+     text-align: center;
+}
+
+/* Common style */
+
+.grid figure {
+     position: relative;
+     float: left;
+     overflow: hidden;
+     margin: 20px 3%;
+     min-width: 360px;
+     max-width: 420px;
+     max-height: 320px;
+     width: 50%;
+     background: white;
+     text-align: center;
+     cursor: pointer;
+     /* box-shadow: 2px 2px 4px #7e7377, -1px 0 2px #7e7377, 0 -1px 2px #7e7377; */
+
+}
+
+.grid figure img {
+     position: relative;
+     display: block;
+     min-height: 90%;
+     max-width: 90%;
+     opacity: 0.8;
+}
+
+.grid figure figcaption {
+     padding: 2em;
+     color: black;
+     /* text-shadow: 0px 0px 3px #7e7377; */
+     font-size: 1.25em;
+     -webkit-backface-visibility: hidden;
+     backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+     pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption>a {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+}
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+
+.grid figure figcaption>a {
+     z-index: 1000;
+     text-indent: 200%;
+     white-space: nowrap;
+     font-size: 0;
+     opacity: 0;
+}
+
+.grid figure h2 {
+     word-spacing: -0.15em;
+     font-weight: 50;
+}
+
+.grid figure h2 span {
+     font-weight: 400;
+}
+
+.grid figure h2,
+.grid figure p {
+     margin: 0;
+}
+
+.grid figure p {
+     letter-spacing: 1px;
+     font-size: 68.5%;
+}
+/* Individual effects */
+/*---------------*/
+/***** Lily *****/
+/*---------------*/
+
+figure.effect-ravi img {
+     max-width: none;
+     width: -webkit-calc(100% + 50px);
+     width: calc(100% + 50px);
+     opacity: 0.8;
+     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+     transition: opacity 0.35s, transform 0.35s;
+     -webkit-transform: translate3d(-20px, 0, 0);
+     transform: translate3d(-20px, 0, 0);
+}
+
+figure.effect-ravi figcaption {
+     text-align: center;
+}
+
+figure.effect-ravi figcaption>div {
+     position: sticky;
+     bottom: 0;
+     left: 0;
+     padding: 4em;
+     width: 100%;
+     height: 50%;
+}
+
+figure.effect-ravi h2,
+figure.effect-ravi p {
+     -webkit-transform: translate3d(0, 20px, 0);
+     transform: translate3d(0, 20px, 0);
+}
+
+figure.effect-ravi h2 {
+     -webkit-transition: -webkit-transform 0.35s;
+     transition: transform 0.35s;
+}
+
+figure.effect-ravi p {
+     color: rgba(255, 255, 255, 0.8);
+     opacity: 0;
+     -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+     transition: opacity 0.2s, transform 0.35s;
+}
+
+figure.effect-ravi:hover img,
+figure.effect-ravi:hover p {
+     opacity: 1;
+}
+
+figure.effect-ravi:hover img,
+figure.effect-ravi:hover h2,
+figure.effect-ravi:hover p {
+     -webkit-transform: translate3d(0, 0, 0);
+     transform: translate3d(0, 0, 0);
+}
+
+figure.effect-ravi:hover p {
+     -webkit-transition-delay: 0.05s;
+     transition-delay: 0.05s;
+     -webkit-transition-duration: 0.35s;
+     transition-duration: 0.35s;
+}
+
+/* Tablet and mobile settings */
+
+@media screen and (max-width: 1115px) {
+     body{
+     text-align: center;
+     font-family: 'archiathin';
+     }
+     h2{
+     font-size: 4rem;
+     }
+     .logo{
+       padding-top: 4rem;
+       width: 90%;
+       float: none;
+     }
+     .grid figure figcaption,
+     .grid figure figcaption>a {
+         font-family: 'archiathin';
+         position: absolute;
+         top: 60px;
+         left: 0;
+         width: 100%;
+         height: 100%;
+     }
+     .navbar-toggler{
+       display: block;
+       position: absolute;
+       top: 7.25rem;
+       right: 1.5rem;
+       border: none;
+       font-size: 2.5rem;
+
+     }
+     .content {
+         padding: 0 10px;
+         text-align: center;
+     }
+     .grid {
+         position: relative;
+         display: block;
+         margin: auto;
+         padding: 0rem 0rem;
+         list-style: none;
+         text-align: center;
+       }
+     .grid figure {
+         display: inline-block;
+         float: none;
+         max-width: 700px;
+         max-height: 540px;
+         margin: 10px auto;
+         width: 100%;
+     }
+}
