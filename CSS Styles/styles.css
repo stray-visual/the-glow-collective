@@ -27,12 +27,13 @@ script {
 .navbar-toggler {
   color: black;
   border: none;
+  padding: 2.5rem 0 3rem;
 }
 .top-container {
   background-color: #b8b3da;
 }
 .navbar{
-  padding: 0 0 4rem;
+  padding: 3rem 0 3rem;
   color: black;
 }
 .navbar-brand{
@@ -57,6 +58,29 @@ script {
      list-style: none;
      text-align: center;
 }
+/* Salaon Page classes */
+.lilac-section{
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+
+}
+.lilac-section::before{
+  content: "";
+  background-image: url('TrippyG-1.png');
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
+
 
 /* Common style */
 
@@ -65,7 +89,7 @@ script {
      float: left;
      overflow: hidden;
      margin: 20px 3%;
-     min-width: 360px;
+     min-width: 300px;
      max-width: 420px;
      max-height: 320px;
      width: 50%;
@@ -203,7 +227,7 @@ figure.effect-ravi:hover p {
 
 /* Tablet and mobile settings */
 
-@media screen and (max-width: 1115px) {
+@media screen and (max-width: 1024px) {
      body{
      text-align: center;
      font-family: 'archiathin';
