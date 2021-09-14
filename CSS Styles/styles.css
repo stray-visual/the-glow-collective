@@ -13,7 +13,7 @@
 /* HTML Section Styles */
 body{
   text-align: center;
-    font-family: 'archiathin';
+  font-family: 'archiathin';
 }
 script {
   display: none;
@@ -281,5 +281,12 @@ figure.effect-ravi:hover p {
          max-height: 540px;
          margin: 10px auto;
          width: 100%;
+     }
+     .carousel-inner{
+       max-width: 700px;
+       display: inline-block;
+       float: none;
+       margin: 10px auto;
+       width: 100%;
      }
 }
